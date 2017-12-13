@@ -1,0 +1,21 @@
+.event-category-host {
+    width: 300px;
+    margin: 0 7px;
+    display: inline-block;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  .event-category-content {
+    border: 1px solid black;
+  }
+  
+  .event-category-day {
+    text-align: left;
+  }
+  
+  h3 {
+    padding: 0 1.5em;
+  }

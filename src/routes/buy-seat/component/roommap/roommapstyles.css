@@ -1,0 +1,196 @@
+.room-map-host {
+  margin: 0 auto 50px;
+  position: relative;
+}
+
+.room-map-name {
+  color: #F25821;
+}
+
+.room-map-seat-container {
+  margin: auto;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.lecture-hall {
+  width: 640px;
+  height: 400px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.conference-room {
+  width: 320px;
+  height: 380px;
+  position: relative;
+}
+
+.auditorium-room {
+  width: 640px;
+  height: 360px;
+  position: relative;
+}
+
+.room-map-row {
+  margin-bottom: 8px;
+}
+
+.room-map-column {
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-direction: column; /* Safari 6.1+ */
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-seat {
+  width: 28px;
+  height: 35px;
+  padding-top: 10px;
+  margin-right: 5px;
+}
+
+.horizontal-seat {
+  width: 35px;
+  height: 28px;
+  padding-top: 7px;
+  margin-bottom: 5px;
+}
+
+.room-map-row-label ,.room-map-seat, .room-map-seat-taken {
+  background-color: #e8e2dd;
+  color: #f25821;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.room-map-seat, .room-map-seat-taken {
+  color: white;
+  background-color: #f25821;
+  position: relative;
+}
+
+.room-map-seat-taken::after, .room-map-seat:hover::after {
+  content: '\f00c';
+  font-family: FontAwesome;
+  font-size: 2em;
+  color: black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.room-map-screen {
+  width: 600px;
+  height: 35px;
+  background-color:lightgrey;
+  text-align: center;
+  padding-top: 12px;
+  box-sizing: border-box;
+  margin: 60px auto 30px;
+}
+
+.conference-board {
+  width: 12px;
+  height: 180px;
+  background-color: lightgrey;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(0, -50%);
+}
+
+.conference-table {
+  width: 80px;
+  height: 150px;
+  background-color: lightgrey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.conference-row-A {
+  position: absolute;
+  bottom: 160px;
+  left: 10px;
+}
+
+.conference-row-B {
+  position: absolute;
+  left: 90px;
+  top: 12px;
+}
+
+.conference-row-C {
+  position: absolute;
+  top: 160px;
+  left: 10px;
+}
+
+.conference-row-D {
+  position: absolute;
+  right: 90px;
+  top: 12px;
+}
+
+.auditorium-projection-room {
+  width: 150px;
+  height: 150px;
+  background-color: lightgrey;
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translate(0, -50%);
+  padding-top: 55px;
+  box-sizing: border-box;
+}
+
+.auditorium-screen {
+  position: absolute;
+  width: 150px;
+  background-color: lightgrey;
+  left: 90px;
+  top: 66px;
+  transform: rotate(90deg);
+}
+
+.auditorium-zone-1 {
+  position: absolute;
+  top: 15px;
+  left: 220px;
+}
+
+.auditorium-zone-2 {
+  position: absolute;
+  bottom: 15px;
+  left: 220px;
+}
+
+.auditorium-zone-3 {
+  position: absolute;
+  bottom: 15px;
+  left: 220px;
+}
+.room-map-button-container {
+  position: absolute;
+  right: 100px;
+}
+
+.room-map-button-red, .room-map-button-green {
+  border-radius: 5px;
+  padding: 5px 8px;
+  margin-right: 5px;
+  color: white;
+}
+
+.room-map-button-red {
+  background-color: red;
+}
+
+.room-map-button-green {
+  background-color: green;
+}
