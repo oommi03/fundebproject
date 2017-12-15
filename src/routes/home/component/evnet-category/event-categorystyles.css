@@ -1,6 +1,6 @@
 .event-category-host {
     width: 300px;
-    margin: 0 7px;
+    margin: 50px 7px;
     display: inline-block;
   }
   
@@ -14,8 +14,11 @@
   
   .event-category-day {
     text-align: left;
+    overflow-y: auto;
+    height: 600px;
   }
   
   h3 {
     padding: 0 1.5em;
   }
+

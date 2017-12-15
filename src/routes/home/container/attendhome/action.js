@@ -1,5 +1,5 @@
 import { constants } from './constanst'
-const { GETCATEGORYROOMACTION } = constants
+const { GETCATEGORYROOMACTION,GETCONVENTIONACTION } = constants
 
 export const getcategoryroomAction = () =>{
     return(dispatch)=>{
@@ -7,6 +7,21 @@ export const getcategoryroomAction = () =>{
         .then((data)=>{data.json().then((data)=>{
             dispatch({
                 type:GETCATEGORYROOMACTION,
+                payload:data,
+            }) 
+        })
+        }).catch((error)=>{
+            type:'ERROR'
+            payload:error
+        })
+            }
+}
+export const getconventionAction = () =>{
+    return(dispatch)=>{
+        fetch('https://convention-center-261342.herokuapp.com/api/convention/all2')
+        .then((data)=>{data.json().then((data)=>{
+            dispatch({
+                type:GETCONVENTIONACTION,
                 payload:data,
             }) 
         })

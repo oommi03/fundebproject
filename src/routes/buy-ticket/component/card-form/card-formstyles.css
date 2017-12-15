@@ -1,0 +1,41 @@
+.card-form {
+    width: 300px;
+    position: relative;
+    margin: 20px auto;
+  }
+  
+  .card-form input {
+    padding: 5px;
+    display: block;
+    margin: 0 auto 15px;
+    font-size: 1em;
+  }
+  
+  .card-form input[name="card_hol"],.card-form  input[name="card_num"] {
+    width: 280px;
+  }
+  
+  .card-form input[name="card_cvv"],.card-form  input[name="card_exp"] {
+    width: 130px;
+    position: absolute;
+  }
+  
+  .card-form input[name="card_cvv"] {
+    left: 0;
+  }
+  
+  .card-form input[name="card_exp"] {
+    left: calc(50% + 5px);
+  }
+  
+  .card-form .card-submit {
+    font-size: 1em;
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin-top: 45px;
+    float: right;
+    /* border-color: #F25821; */
+    color: white;
+    background-color: #F25821;
+    outline: none;
+  }

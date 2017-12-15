@@ -4,6 +4,7 @@
 }
 
 .room-map-name {
+  margin-left: 50px;
   color: #F25821;
 }
 
@@ -26,9 +27,15 @@
   position: relative;
 }
 
+.concert-hall {
+  width: 720px;
+  height: 600px;
+  position: relative;
+}
+
 .auditorium-room {
-  width: 640px;
-  height: 360px;
+  width: 720px;
+  height: 450px;
   position: relative;
 }
 
@@ -38,9 +45,28 @@
 
 .room-map-column {
   display: -webkit-flex; /* Safari */
-  -webkit-flex-direction: column; /* Safari 6.1+ */
   display: flex;
-  flex-direction: column;
+  -webkit-flex-flow: column wrap; /* Safari 6.1+ */
+  flex-flow: column wrap;
+  margin-right: 8px;
+}
+
+.column-wrapper {
+  height: 450px;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  -webkit-flex-flow: column wrap; /* Safari 6.1+ */
+  flex-flow: column wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.column-wrapper.zoneA {
+  height: 180px;
+}
+
+.column-wrapper.zoneB {
+  height: 360px;
 }
 
 .vertical-seat {
@@ -172,25 +198,52 @@
 
 .auditorium-zone-3 {
   position: absolute;
-  bottom: 15px;
-  left: 220px;
+  left: 520px;
 }
-.room-map-button-container {
+
+.concert-hall-zone-1 {
   position: absolute;
-  right: 100px;
+  left: 30px;
+  top: 400px;
 }
 
-.room-map-button-red, .room-map-button-green {
-  border-radius: 5px;
-  padding: 5px 8px;
-  margin-right: 5px;
-  color: white;
+.concert-hall-zone-2 {
+  position: absolute;
+  left: 620px;
+  top: 400px;
 }
 
-.room-map-button-red {
-  background-color: red;
+.concert-hall-zone-3 {
+  position: absolute;
+  left: 30px;
+  top: 30px;
 }
 
-.room-map-button-green {
-  background-color: green;
+.concert-hall-zone-4 {
+  position: absolute;
+  left: 620px;
+  top: 30px;
+}
+
+.concert-hall-zone-5 {
+  position: absolute;
+  left: 166px;
+  top: 30px;
+}
+
+.concert-hall-zone-6 {
+  position: absolute;
+  left: 230px;
+  top: 180px;
+}
+
+.concert-stage {
+  width: 450px;
+  font-size: 1.8em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: lightgrey;
+  position: absolute;
+  bottom: 40px;
+  left: 140px;
 }

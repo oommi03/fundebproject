@@ -1,0 +1,27 @@
+.login-host {
+    padding: 50px 0;
+    border: 1px solid black;
+    width: 685px;
+    margin: 100px auto;
+  }
+  
+  .login-host::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+  
+  .login-signup, .login-signin {
+    float: left;
+  }
+  
+  .login-title {
+    text-align: center;
+  }
+  
+  .divider {
+    width: 5px;
+    height: 250px;
+    background-color: black;
+    float: left;
+  }

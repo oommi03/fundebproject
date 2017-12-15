@@ -1,5 +1,5 @@
 import { constants } from './constanst'
-const { GETCATEGORYROOMACTION } = constants
+const { GETCATEGORYROOMACTION,GETCONVENTIONACTION } = constants
 
 const attendhomestate = {
 
@@ -12,6 +12,9 @@ export const attendhomeReducer = (state={},action) =>{
         break;
         case'ERROR':
             return{...state}
+        break;
+        case GETCONVENTIONACTION:
+            return{...state,descriptionroom:action.payload}
         break;
     default: return state
     }

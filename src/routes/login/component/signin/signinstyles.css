@@ -1,0 +1,24 @@
+.signin-host {
+    font-size: 1em;
+    text-align: center;
+    width: 240px;
+    margin: 0 50px;
+  }
+  
+  .signin-host input {
+    min-width: 180px;
+    padding: 5px;
+    display: block;
+    margin: 0 auto 15px;
+    font-size: 1em;
+  }
+  
+  .signin-host button.submit {
+    font-size: 1em;
+    padding: 8px 15px;
+    border-radius: 10px;
+    /* border-color: #F25821; */
+    color: white;
+    background-color: #F25821;
+    outline: none;
+  }
